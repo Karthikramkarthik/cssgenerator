@@ -10,16 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
     var borderStyle = document.getElementById('borderStyle');
     var bgColor = document.getElementById('bgColor');
     var bgColorLabel = document.getElementById('bgColorLabel');
+    var bgImage = document.getElementById('bgImage');
+    var bgImagePreview = document.getElementById('imagePreview');
   
     var all_radius = 10;
     var all_borderSize = 2;
     var border_style = 'dashed';
     var background_color = '';
     var bgColorLabel_Code = '';
+    var backgroundImage = '';
     var coding="";
   
     function borderRadius(e) {
-        
+        backgroundImage = bgImage.value;
         all_radius = rangeSlider.value;
         all_borderSize = borderSizeRangeSlider.value;
         background_color = bgColor.value;
@@ -30,11 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
         border:${all_borderSize}px ${border_style} red;
         background:${background_color};
         `
+        bgImageValue = `
+        background-image: url('${backgroundImage}');
+
+        `
         copyCode.value=coding;
         rangeValue.innerHTML = all_radius + 'px';
         borderSizerangeValue.innerHTML = all_borderSize + 'px';
         bgColorLabel.value = background_color;
         previewCode.style.cssText = coding;
+        bgImagePreview.style.cssText = bgImageValue;
 
     }
 
@@ -45,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     borderSizeRangeSlider.addEventListener('mousemove', borderRadius);
     borderStyle.addEventListener('change', borderRadius);
     bgColor.addEventListener('input', borderRadius);
+    bgImage.addEventListener('input', borderRadius);
 
     copyBtn.addEventListener('click', ()=>{
         document.querySelector('textarea').select();

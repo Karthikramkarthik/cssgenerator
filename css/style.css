@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(237, 242, 247);
+}
 .panel-group .panel {
     margin-bottom: 0;
     border-radius: 4px;
@@ -18,19 +21,28 @@
 }
 .option_label {
     float: right;
-    color: #158cba;
+    color: #F6931F;
     font-weight: bold;
 }
 .form-group textarea {
-    background: #eee;
+    background: rgb(29, 31, 33);
     border: 0;
     pointer-events: none;
+    color: #fff;
+    min-height: 210px;
+}
+.form-control:focus{
+    background: transparent;
+    box-shadow: none;
+}
+.form-group textarea:focus{
+    background: rgb(29, 31, 33);
 }
 .panel-group{
     margin-bottom: 10px;
 }
 .preview {
-    background: #eeeeee;
+    background: #dfe6ee;
     padding: 34px;
 }
 .outputPreview {
@@ -40,6 +52,9 @@
     margin: 0 auto;
     line-height: 159px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #Snackbar {
     visibility: hidden;
@@ -98,4 +113,11 @@
     width: 25%;
     right: 0;
     background: #eeeeee;
+}
+.jumbotron{
+    background-color: rgb(223, 230, 238);
+}
+#imagePreview{
+    background-repeat: no-repeat;
+    background-size: cover;
 }

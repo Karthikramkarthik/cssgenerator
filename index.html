@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<div id="Snackbar">Text Copied Successfully...</div>
+<div class="jumbotron text-center">
+  <h1>CSS Generator</h1>
+
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div class="panel-group">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                Border Options
+              </h4>              
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="option_name">
+                    Border radius
+                    </div>
+                    <div id="border_width_label" class="option_label">0px</div>
+                    <div class="form-group">
+                     
+                      <input type="range" class="form-control-range" id="formControlRange" min="0" max="100" step="1" value="10">
+                    </div>
+                  </li>
+                  <!-- Border Size -->
+                  <li class="list-group-item">
+                    <div class="option_name">
+                    Border Size
+                    </div>
+                    <div id="border_size_label" class="option_label">0px</div>
+                    <div class="form-group">
+                     
+                      <input type="range" class="form-control-range" id="formControlSizeRange" min="0" max="10" step="1" value="3">
+                    </div>
+                  </li>
+                   <!-- Border Size -->
+                   <!-- Select Border Style -->
+                   <li class="list-group-item">
+                    <div class="option_name">
+                    Border Style
+                    </div>
+                
+                    <div class="form-group">
+                    
+                      <select class="form-control" id="borderStyle">
+                        <option selected="">solid</option>
+                        <option>dotted</option>
+                        <option>dashed</option>
+                        <option>double</option>
+                        <option>groove</option>
+                        <option>ridge</option>
+                        <option>inset</option>
+                        <option>outset</option>
+                        <option>none</option>
+                        <option>hidden</option>
+                      </select>
+                    </div>
+                  </li>
+                   <!-- Select Border Style -->
+                   <!-- Select Background Color -->
+                   <li class="list-group-item">
+                    <div class="option_name">
+                    Background Color
+                    </div>
+                    <!-- <div id="border_size_label" class="option_label">0px</div> -->
+                    <div class="form-group">
+                     
+                      <div class="bgcolorWrap">
+                        <input type="text" class="form-control" id="bgColorLabel">
+                        <input type="color" class="form-control" id="bgColor"  value="#e66465">
+                      </div>
+                   
+                    </div>
+                  </li>
+                   <!-- Select Background Color -->
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+          <div class="form-group">
+            <textarea name="" id="copyCode" cols="30" rows="5" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary w-100" id="copyBtn">Copy Code</button>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              Preview
+            </h4>              
+          </div>
+          <div class="preview">
+              <div class="outputPreview" id="previewCode">Preview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

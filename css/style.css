@@ -1,0 +1,101 @@
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+.panel-primary>.panel-heading {
+    color: #ffffff;
+    background-color: #158cba;
+    border-color: transparent;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.option_name {
+    float: left;
+}
+.option_label {
+    float: right;
+    color: #158cba;
+    font-weight: bold;
+}
+.form-group textarea {
+    background: #eee;
+    border: 0;
+    pointer-events: none;
+}
+.panel-group{
+    margin-bottom: 10px;
+}
+.preview {
+    background: #eeeeee;
+    padding: 34px;
+}
+.outputPreview {
+    width: 159px;
+    background: #fff;
+    height: 159px;
+    margin: 0 auto;
+    line-height: 159px;
+    text-align: center;
+}
+#Snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #58ab10;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    font-size: 17px;
+    right: 10px;
+    height: 57px;
+  }
+  .form-control-range{
+    cursor: pointer;
+  }
+  .jumbotron {
+    padding: 2rem 2rem;
+}
+  #Snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  .bgcolorWrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#bgColor{
+    position: absolute;
+    top: 0;
+    width: 25%;
+    right: 0;
+    background: #eeeeee;
+}
